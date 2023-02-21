@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/3f0fa15c4e.css" crossorigin="anonymous">
+    <link href="https://css.gg/css?=|software-upload" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <center><title>Kmmv File sharing</title></center>
+</head>
+<body>
+    <center><h1 class="thala">kmmv_Share</h1></center>
+    <center><div class="card">
+       
+        
+        <i class="fa-solid fa-upload">ono</i><h2>Upload File</h2><span class="oma"></span>
+        <input type="file" id="file" onchange="flesize()"><br>
+        <center><button id="upload" onclick="uploadImage()">Upload<i class="fa-solid fa-cloud-arrow-up"></i></button></center>
+
+        <center><div id="ShowUniqueID" hidden><p>Unique ID</p><input type="text" id="showunique"  value="23456" disabled></input></div></center>
+        <!-- <br> -->
+        <!-- <div class="Download" id="downloadiv"> -->
+        <h2>Receive File</h2>
+        
+        <input type="text" id="unique" placeholder="Enter Unique ID"><br>
+        <center><button id="show" onclick="showimage()">Download<img id="downimg" src="" alt="none"/></button></center>
+    </center>
+</div>
+<style>
+     * {
+        box-sizing: border-box;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    body{
+        background-image: url('repic.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+    div.card{
+        align-items: center;
+        text-align: center;
+        text-decoration-color: antiquewhite;
+        
+        /* box-sizing: border-box; */
+        background-color: rgb(43, 41, 41);
+        top: 50%;
+        right: 35%;
+        left: 35%;
+        width: 100%%;
+        /* align-content: center; */
+        border: 30px black;
+        
+        
+        /* align-content: center;
+        align-self: center; */
+        position:absolute;
+        width: 239px;
+        height: 238px;
+
+        background: rgba(0, 0, 0, 0.55);
+        border-radius: 46px;
+        /* top:10%;
+        left: 10%;
+        bottom: 10%;
+        right: 10%;
+        background-color: rgb(0, 0, 0);
+        height: 30%;
+        margin: 30%;
+        
+        
+        position:fixed;
+        
+        
+        opacity: 0.7;
+        padding: 60px 10px 60px 20px;
+        border-radius: 40px;
+        color: aliceblue; */
+    }
+    body.upload{
+    
+    }
+</style>
+
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase.js"></script>
+<script src="script.js"></script>
+</html>
